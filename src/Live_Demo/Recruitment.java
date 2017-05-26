@@ -2,11 +2,9 @@
 package Live_Demo;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Recruitment {
-	static WebDriver d;
+public class Recruitment extends Main {
 	public static void Add_Vacancies(String Job_Title,String Vacancy_Name,String Hiring_Manager,int NOP)throws Exception
 	{	
 		Thread.sleep(2000);

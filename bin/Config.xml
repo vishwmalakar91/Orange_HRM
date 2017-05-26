@@ -1,19 +1,18 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
   <test name="Test">
+  	<parameter name="username_ORHM" value="Admin"/>
+	<parameter name="password_ORHM" value="admin"/>
+	<parameter name="FName" value="Vishwanath"/>
+	<parameter name="MName" value=""/>
+	<parameter name="LName" value="Malakar"/>
+	<parameter name="UName" value="vishwa"/>
+	<parameter name="UPass" value="vishwa"/>
+	<parameter name="Status" value="Enabled"/>
     <classes>
-      <class name="Live_Demo.Main"/>
+      <class name="Live_Demo.Driver"/>
+      <class name="Live_Demo.Login_Page"/>
+       <class name="Live_Demo.PIM"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="false">
-  <test name="Test">
-    <classes>
-      <class name="Live_Demo.Main"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
->>>>>>> a434b8c23c78e0e878112acad9f8e34004071889

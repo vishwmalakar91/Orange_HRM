@@ -3,16 +3,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Main {
-
+	
 	public static WebDriver d;
-	//web
+	static String OHUrl="http://opensource.demo.orangehrmlive.com/index.php/auth/login";
+	static String user_id="Admin";
+	static String Password="admin";
 	
-public static void main(String[] args) throws Exception {
-	
-	String OHUrl="http://opensource.demo.orangehrmlive.com/index.php/auth/login";
-	String user_id="Admin";
-	String Password="admin";
-	
+	public static void main(String[] args) throws Exception {
 	System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\S3.4\\chromedriver.exe");
 	d=new ChromeDriver();
 	//System.setProperty("webdriver.gecko.driver", "D:\\Selenium\\S3.4\\geckodriver.exe");
@@ -28,6 +25,6 @@ public static void main(String[] args) throws Exception {
 	Admin.Delete_User("Vishwa1");
 	Recruitment.Delete_Vacancies("Test Engineer");
 	PIM.Delete_Employee(PIM.Emp_id,"Vishwanath");
-	//Need Test NG
+
 }
 }

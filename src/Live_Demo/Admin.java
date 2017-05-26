@@ -2,11 +2,9 @@
 package Live_Demo;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Admin {
-	static WebDriver d;
+public class Admin extends Main {
 	public static void Admin_Add_User(String Role,String Name,String U_Name,String Status,String Pass)throws Exception
 	{
 	Thread.sleep(2000);

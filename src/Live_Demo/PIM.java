@@ -1,12 +1,14 @@
 package Live_Demo;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
-public class PIM {
-	static WebDriver d;
+public class PIM extends Main {
 	static int Emp_id;
+	@Test
+	@Parameters({"FName","MName","LName","UName","UPass","Status"})
 	public static void Add_Eployee(String F_Name,String M_Name,String L_Name,String U_Name,String Pass,String Status)throws Exception
 	{
 	String Create_Login_Details="Y";
@@ -40,6 +42,8 @@ public class PIM {
 		}
 	}
 
+	//Need to pass Emp ID @Parameters({Emp_id,"FName"})
+	
 public static void Delete_Employee(int Emp_Id,String Emp_Name) throws Exception
 {
 	Thread.sleep(2000);
@@ -53,5 +57,21 @@ public static void Delete_Employee(int Emp_Id,String Emp_Name) throws Exception
 	d.findElement(By.id("dialogDeleteBtn")).click();
 	System.out.println("Emplyee : "+Emp_Name+", Emp ID : "+Emp_Id+" => Deleted Successfully");
 	}
+	
+@Test
+@Parameters({"FName"})
+	public static void Delete_Employee(String Emp_Name) throws Exception
+	{
+		Thread.sleep(2000);
+		d.findElement(By.id("menu_pim_viewPimModule")).click();
+		Thread.sleep(2000);
+		d.findElement(By.id("menu_pim_viewPimModule")).click();
+		Thread.sleep(2000);
+		d.findElement(By.xpath(".//a[contains(text(),'"+Emp_Name+"')]//ancestor::td//preceding::td//input")).click();
+		d.findElement(By.id("btnDelete")).click();
+		Thread.sleep(2000);
+		d.findElement(By.id("dialogDeleteBtn")).click();
+		System.out.println("Emplyee : "+Emp_Name+" => Deleted Successfully");
+		}
 
 }
