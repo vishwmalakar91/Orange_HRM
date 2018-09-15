@@ -5,7 +5,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class PIM extends Main {
+public class PIM extends Main1 {
 	static int Emp_id;
 	@Test
 	@Parameters({"FName","MName","LName","UName","UPass","Status"})

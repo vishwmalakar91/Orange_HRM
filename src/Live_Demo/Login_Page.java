@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
-public class Login_Page extends Main  {
+public class Login_Page extends Main1  {
 	@BeforeTest
 	@Parameters({"username_ORHM","password_ORHM"})
 	public static void Login(String user_id, String Password) throws Exception

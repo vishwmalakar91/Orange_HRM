@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3358" started-at="2018-09-15T19:49:13Z" finished-at="2018-09-15T19:49:16Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="3358" started-at="2018-09-15T19:49:13Z" finished-at="2018-09-15T19:49:16Z">
+      <class name="Live_Demo.Login_Page">
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:Live_Demo.Login_Page@23d2a7e8]" name="Login" is-config="true" duration-ms="3338" started-at="2018-09-15T19:49:13Z" finished-at="2018-09-15T19:49:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- Live_Demo.Login_Page -->
+      <class name="Live_Demo.Driver">
+        <test-method status="PASS" signature="DriverSetup()[pri:0, instance:Live_Demo.Driver@687080dc]" name="DriverSetup" is-config="true" duration-ms="11535" started-at="2018-09-15T19:49:01Z" finished-at="2018-09-15T19:49:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverSetup -->
+      </class> <!-- Live_Demo.Driver -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

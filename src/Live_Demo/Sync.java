@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Sync extends Main  {
+public class Sync extends Main1  {
 	public static void waitForLoad(WebDriver driver) 
 	{
 	    new WebDriverWait(driver, 30).until((ExpectedCondition<Boolean>) wd ->

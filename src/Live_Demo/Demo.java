@@ -14,11 +14,11 @@ public class Demo{
 	
 	public static void main(String[] args) throws Exception {
 		
-	String OHUrl="http://opensource.demo.orangehrmlive.com/index.php/auth/login";
+	String OHUrl="https://opensource-demo.orangehrmlive.com/";
 	String user_id="Admin";
 	String Password="admin";
 	
-	System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\S3.4\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\vishw\\OneDrive\\Desktop\\Repo\\Github\\mySelenium\\Drivers\\chromedriver.exe");
 	d=new ChromeDriver();
 	//System.setProperty("webdriver.gecko.driver", "D:\\Selenium\\S3.4\\geckodriver.exe");
 	//d=new FirefoxDriver();

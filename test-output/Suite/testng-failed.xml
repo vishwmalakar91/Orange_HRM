@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Status" value="Enabled"/>
+    <parameter name="UName" value="vishwa"/>
+    <parameter name="LName" value="Malakar"/>
+    <parameter name="password_ORHM" value="admin123"/>
+    <parameter name="UPass" value="vishwa"/>
+    <parameter name="username_ORHM" value="Admin"/>
+    <parameter name="MName" value=""/>
+    <parameter name="FName" value="Vishwanath"/>
+    <classes>
+      <class name="Live_Demo.PIM">
+        <methods>
+          <include name="Delete_Employee" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Live_Demo.PIM -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
